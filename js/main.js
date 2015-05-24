@@ -19,7 +19,7 @@ $(function () {
         },
         yAxis: {
             title: {
-                text: 'Percent (%)'
+                text: ''
             },
             labels: {
                 enabled: false
@@ -79,7 +79,7 @@ $(function () {
         
         yAxis: {
             title: {
-                text: 'Percent (%)'
+                text: ''
             },
             labels: {
                 enabled: false
@@ -231,7 +231,7 @@ $(function () {
         },
         series: [{
             name: 'Maryland',
-            color: '#E56344',
+            color: '#E5BB5F',
             data: [5, 5, 5, 4, 4]
         }, {
             name: 'United States',
