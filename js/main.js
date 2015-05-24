@@ -65,7 +65,10 @@ $(function () {
 
 $(function () {
     $('#mdeducation').highcharts({
-        
+        chart: {
+            backgroundColor: 'rgb(229, 99, 68)',
+            }, 
+
         credits: {
             enabled: false
         },
