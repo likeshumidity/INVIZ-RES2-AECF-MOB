@@ -27,9 +27,7 @@
     </div>
     <div class="row">
       <div class="col-sm-3" id="rankingSelector">
-        <svg width="200px" height="400px" viewbox="0 0 200 400">
-            <rect width="200" height="400" style="fill:rgb(0,0,255);" />
-        </svg>
+        
       </div>
       <div class="col-sm-9">
         <div>
@@ -252,13 +250,26 @@
         var mapSelectionToggle = function(selectionNew) {
             $(".selectedState").removeClass('selectedState');
             $("#" + selectionNew).addClass('selectedState');
-            
+
             
         }
         
         var stateListCSV = d3.csv('content/stateList.csv');
         var RS = d3.select('#rankingSelector');
-            
+
+        var RSsvg = RS.append('svg')
+          .attr('width', "100%")
+          .attr('height', "450")
+          .attr("viewbox", "0 0 290 450")
+        
+        RSsvg.append('rect')
+          .attr('width', 290)
+          .attr('height', 450)
+          .style('fill', '#BBBBBB')
+    
+// <svg width="200px" height="400px" viewbox="0 0 200 400">
+//            <rect width="200" height="400" style="fill:rgb(0,0,255);" />
+//        </svg>            
 //        d3.select('#rankingSelector')
 //          .enter().append('svg')
 //          .style('width: 100%;');
