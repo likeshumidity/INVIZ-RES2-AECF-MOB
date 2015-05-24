@@ -26,7 +26,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-3">
+      <div class="col-sm-3" id="rankingSelector">
         <div class="row">
           <div class="col-xs-4">
             <h2>Overall</h2>
@@ -246,6 +246,12 @@
             
             
         }
+        
+        stateListCSV = d3.csv('content/stateList.csv');
+            
+//        d3.select('#rankingSelector')
+//          .enter().append('svg')
+//          .style('width: 100%;');
     </script>
       
     <script src="js/main.js"></script> 
