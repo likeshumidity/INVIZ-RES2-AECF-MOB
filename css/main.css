@@ -5,3 +5,11 @@
 	stroke-width:2;
 	stroke-opacity:1;
 }
+
+.state:hover {
+    fill: #FF0000;
+}
+
+.state .selected {
+    fill: #00FF00;
+}
