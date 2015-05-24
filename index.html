@@ -27,28 +27,9 @@
     </div>
     <div class="row">
       <div class="col-sm-3" id="rankingSelector">
-        <div class="row">
-          <div class="col-xs-4">
-            <h2>Overall</h2>
-            <div style="background-color: #333333; height: 300pt;"></div>
-          </div>
-          <div class="col-xs-2">
-            <h2>Economy</h2>
-            <div style="background-color: #333333; height: 300pt;"></div>
-          </div>
-          <div class="col-xs-2">
-            <h2>Education</h2>
-            <div style="background-color: #333333; height: 300pt;"></div>
-          </div>
-          <div class="col-xs-2">
-            <h2>Family</h2>
-            <div style="background-color: #333333; height: 300pt;"></div>
-          </div>
-          <div class="col-xs-2">
-            <h2>Health</h2>
-            <div style="background-color: #333333; height: 300pt;"></div>
-          </div>
-        </div>
+        <svg width="200px" height="400px" viewbox="0 0 200 400">
+            <rect width="200" height="400" style="fill:rgb(0,0,255);" />
+        </svg>
       </div>
       <div class="col-sm-9">
         <div>
@@ -265,7 +246,8 @@
             
         }
         
-        stateListCSV = d3.csv('content/stateList.csv');
+        var stateListCSV = d3.csv('content/stateList.csv');
+        var RS = d3.select('#rankingSelector');
             
 //        d3.select('#rankingSelector')
 //          .enter().append('svg')
