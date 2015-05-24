@@ -1,5 +1,11 @@
 $(function () {
     $('#mdeconomy').highcharts({
+        
+        credits: {
+            enabled: false
+        },
+        
+        
         title: {
             text: 'Children Living in Poverty',
             x: -20 //center
@@ -18,11 +24,11 @@ $(function () {
             plotLines: [{
                 value: 0,
                 width: 1,
-                color: '#2DA6A1'
+                color: '#808080'
             }]
         },
         tooltip: {
-            valueSuffix: '°C'
+            valueSuffix: '%'
         },
         legend: {
             layout: 'vertical',
@@ -32,10 +38,56 @@ $(function () {
         },
         series: [{
             name: 'Maryland',
+            color: '#2DA6A1',
             data: [11.8, 13.1, 13.9, 14.1, 13.9]
         }, {
             name: 'United States',
+            color: '#808080',
             data: [20, 22, 23, 23, 22]
+        }, ]
+    });
+});
+
+$(function () {
+    $('#mdeducation').highcharts({
+        title: {
+            text: 'Fourth Graders Scoring Below Basic in State Standardized Tests',
+            x: -20 //center
+        },
+        subtitle: {
+            text: 'Source: Maryland State Department of Education',
+            x: -20
+        },
+        xAxis: {
+            categories: ['2005', '2007', '2009', '2011', '2013']
+        },
+        yAxis: {
+            title: {
+                text: 'Percent (%)'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name: 'Maryland',
+            color: '#F29F31',
+            data: [35, 31, 30, 25, 23]
+        }, {
+            name: 'United States',
+            color: '#808080',
+            data: [38, 34, 34, 34, 33]
         }, ]
     });
 });
