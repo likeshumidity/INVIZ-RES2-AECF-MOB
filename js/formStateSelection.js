@@ -8,8 +8,11 @@ $(document).ready(function() {
     var rows = data.split("\n");
 
     rows.forEach( function getvalues(rowState) {
-// <option value="MD">Maryland</option>
-      html += '<option value="' + rowState[1] + '">' + rowState[0] + '</option>';
+      cols = rowState.split(',');
+//      console.log(cols[1] + ' - ' + cols[0]);
+      if (cols[0] != 'Name') {
+        html += '<option value="' + cols[1] + '">' + cols[0] + '</option>';
+      }
     });
 
     html += '</select>';
