@@ -21,19 +21,30 @@ $(function () {
             title: {
                 text: 'Percent (%)'
             },
+            labels: {
+                enabled: false
+            },
             plotLines: [{
                 value: 0,
                 width: 1,
                 color: '#808080'
             }]
         },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
         tooltip: {
             valueSuffix: '%'
         },
         legend: {
-            layout: 'vertical',
-            align: 'right',
-            verticalAlign: 'middle',
+            layout: 'horizontal',
+            align: 'center',
+            verticalAlign: 'bottom',
             borderWidth: 0
         },
         series: [{
@@ -50,6 +61,10 @@ $(function () {
 
 $(function () {
     $('#mdeducation').highcharts({
+        
+        credits: {
+            enabled: false
+        },
         title: {
             text: 'Fourth Graders Scoring Below Basic in State Standardized Tests',
             x: -20 //center
@@ -61,9 +76,13 @@ $(function () {
         xAxis: {
             categories: ['2005', '2007', '2009', '2011', '2013']
         },
+        
         yAxis: {
             title: {
                 text: 'Percent (%)'
+            },
+            labels: {
+                enabled: false
             },
             plotLines: [{
                 value: 0,
@@ -71,13 +90,21 @@ $(function () {
                 color: '#808080'
             }]
         },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
         tooltip: {
             valueSuffix: '%'
         },
         legend: {
-            layout: 'vertical',
-            align: 'right',
-            verticalAlign: 'middle',
+            layout: 'horizontal',
+            align: 'center',
+            verticalAlign: 'bottom',
             borderWidth: 0
         },
         series: [{
@@ -88,6 +115,128 @@ $(function () {
             name: 'United States',
             color: '#808080',
             data: [38, 34, 34, 34, 33]
+        }, ]
+    });
+});
+
+$(function () {
+    $('#mdhealth').highcharts({
+        
+        credits: {
+            enabled: false
+        },
+        
+        
+        title: {
+            text: 'Percent of Uninsured Children',
+            x: -20 //center
+        },
+        subtitle: {
+            text: 'Source: American Community Survey',
+            x: -20
+        },
+        xAxis: {
+            categories: ['2009', '2010', '2011', '2012', '2013']
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            labels: {
+                enabled: false
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        legend: {
+            layout: 'horizontal',
+            align: 'center',
+            verticalAlign: 'bottom',
+            borderWidth: 0
+        },
+        series: [{
+            name: 'Maryland',
+            color: '#E56344',
+            data: [5, 5, 5, 4, 4]
+        }, {
+            name: 'United States',
+            color: '#808080',
+            data: [9, 8, 7, 7, 7]
+        }, ]
+    });
+});
+
+$(function () {
+    $('#mdcommunity').highcharts({
+        
+        credits: {
+            enabled: false
+        },
+        
+        
+        title: {
+            text: 'Number of Children in Foster Care',
+            x: -20 //center
+        },
+        subtitle: {
+            text: 'Source: American Community Survey',
+            x: -20
+        },
+        xAxis: {
+            categories: ['2009', '2010', '2011', '2012', '2013']
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            labels: {
+                enabled: false
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        legend: {
+            layout: 'horizontal',
+            align: 'center',
+            verticalAlign: 'bottom',
+            borderWidth: 0
+        },
+        series: [{
+            name: 'Maryland',
+            color: '#E56344',
+            data: [5, 5, 5, 4, 4]
+        }, {
+            name: 'United States',
+            color: '#808080',
+            data: [9, 8, 7, 7, 7]
         }, ]
     });
 });
