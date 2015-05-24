@@ -66,9 +66,9 @@ $(function () {
 $(function () {
     $('#mdeducation').highcharts({
         chart: {
-            backgroundColor: 'rgb(229, 99, 68)',
-            }, 
-
+            backgroundColor: '#FCF1E8',
+            type: 'line'
+            },
         credits: {
             enabled: false
         },
@@ -128,7 +128,10 @@ $(function () {
 
 $(function () {
     $('#mdhealth').highcharts({
-        
+        chart: {
+            backgroundColor: '#F9EEEC',
+            type: 'line'
+            },
         credits: {
             enabled: false
         },
@@ -189,7 +192,10 @@ $(function () {
 
 $(function () {
     $('#mdcommunity').highcharts({
-        
+        chart: {
+            backgroundColor: '#F9F4ED',
+            type: 'line'
+            },
         credits: {
             enabled: false
         },
