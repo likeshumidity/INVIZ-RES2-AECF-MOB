@@ -11,6 +11,7 @@
 }
 
 .state .selected {
+<<<<<<< HEAD
     fill: #EDB41D;
 }
 
@@ -18,3 +19,8 @@
 select {
 	-webkit-appearance:none;
 }
+=======
+    fill: #00FF00;
+}
+
+>>>>>>> origin/master
