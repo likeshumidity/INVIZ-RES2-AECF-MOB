@@ -7,9 +7,14 @@
 }
 
 .state:hover {
-    fill: #FF0000;
+    fill: #EDB41D;
 }
 
 .state .selected {
-    fill: #00FF00;
+    fill: #EDB41D;
+}
+
+#formStateSelection
+select {
+	-webkit-appearance:none;
 }
