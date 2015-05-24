@@ -21,6 +21,7 @@ $(function () {
         xAxis: {
             categories: ['2009', '2010', '2011', '2012', '2013']
         },
+        
         yAxis: {
             title: {
                 text: ''
@@ -67,8 +68,8 @@ $(function () {
     $('#mdeducation').highcharts({
         chart: {
             backgroundColor: '#FCF1E8',
-            type: 'line'
-            },
+            }, 
+
         credits: {
             enabled: false
         },
@@ -130,8 +131,8 @@ $(function () {
     $('#mdhealth').highcharts({
         chart: {
             backgroundColor: '#F9EEEC',
-            type: 'line'
-            },
+            }, 
+
         credits: {
             enabled: false
         },
@@ -194,8 +195,8 @@ $(function () {
     $('#mdcommunity').highcharts({
         chart: {
             backgroundColor: '#F9F4ED',
-            type: 'line'
-            },
+            }, 
+
         credits: {
             enabled: false
         },
