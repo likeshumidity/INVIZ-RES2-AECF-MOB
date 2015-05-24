@@ -11,16 +11,9 @@
 }
 
 .state .selected {
-<<<<<<< HEAD
     fill: #EDB41D;
 }
 
-#formStateSelection
-select {
+#formStateSelection select {
 	-webkit-appearance:none;
 }
-=======
-    fill: #00FF00;
-}
-
->>>>>>> origin/master
