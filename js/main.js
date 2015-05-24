@@ -1,5 +1,9 @@
 $(function () {
     $('#mdeconomy').highcharts({
+        chart: {
+            backgroundColor: '#E9F4F2',
+            type: 'line'
+            }, 
         
         credits: {
             enabled: false
@@ -193,7 +197,7 @@ $(function () {
             x: -20 //center
         },
         subtitle: {
-            text: 'Source: American Community Survey',
+            text: 'Source: Child Trends analysis of data from the Adoption and Foster Care Analysis and Reporting System (AFCARS), made available through the National Data Archive on Child Abuse and Neglect.',
             x: -20
         },
         xAxis: {
@@ -237,6 +241,63 @@ $(function () {
             name: 'United States',
             color: '#808080',
             data: [9, 8, 7, 7, 7]
+        }, ]
+    });
+});
+
+$(function () {
+    $('#farms').highcharts({
+        
+        credits: {
+            enabled: false
+        },
+        
+        
+        title: {
+            text: 'Percent of Children Receiving Free and Reduced Meals',
+            x: -20 //center
+        },
+        subtitle: {
+            text: 'Source: Maryland Department of Education',
+            x: -20
+        },
+        xAxis: {
+            categories: ['2009', '2010', '2011', '2012', '2013']
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            labels: {
+                enabled: false
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+        tooltip: {
+            valueSuffix: '%'
+        },
+        legend: {
+            layout: 'horizontal',
+            align: 'center',
+            verticalAlign: 'bottom',
+            borderWidth: 0
+        },
+        series: [{
+            name: 'Maryland',
+            color: '#F29F31',
+            data: [36, 40, 42, 43, 44]
         }, ]
     });
 });
