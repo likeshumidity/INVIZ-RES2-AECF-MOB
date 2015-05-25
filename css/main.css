@@ -27,7 +27,6 @@
 
 #formStateSelection {
     background-color: #494444;
-    
     padding: 15px;
     margin: 0px;
 }
@@ -35,9 +34,17 @@
 #formStateSelection label {
     padding: 0px;
     color: #FFFFFF;
-    font-size: 2em;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
 #formStateSelection select {
     clear: left;
+}
+
+body .row p {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 9pt;
 }

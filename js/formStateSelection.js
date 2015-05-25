@@ -9,9 +9,14 @@ $(document).ready(function() {
 
     rows.forEach( function getvalues(rowState) {
       cols = rowState.split(',');
-//      console.log(cols[1] + ' - ' + cols[0]);
+      console.log(cols[1] + ' - ' + cols[0]);
+      if (cols[1] == 'MD') {
+          var sel = ' selected="selected"';
+      } else {
+          var sel = '';
+      }
       if ((cols[0] != 'Name') && (cols[0].length > 0)) {
-        html += '<option value="' + cols[1] + '">' + cols[0] + '</option>';
+        html += '<option value="' + cols[1] + '"' + sel + '>' + cols[0] + '</option>';
       }
     });
 
@@ -19,6 +24,6 @@ $(document).ready(function() {
     html += '</div>';
     html += '</form>';
 
-    $("#formStateSelection").html(html); 
+    $("#formStateSelection").append(html); 
   });
 });
