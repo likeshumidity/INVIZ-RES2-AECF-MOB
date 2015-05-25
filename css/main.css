@@ -48,3 +48,12 @@ body .row p {
     margin-right: 15px;
     font-size: 9pt;
 }
+
+div h3 {
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+
+div h3.econ {
+    color: #2da6a1;
+}
