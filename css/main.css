@@ -17,3 +17,24 @@
 #formStateSelection select {
 	-webkit-appearance:none;
 }
+
+#headerNav {
+    background-color: #494444;
+    border-width: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#formStateSelection {
+    background-color: #494444;
+    height: 100px
+}
+
+#formStateSelection label {
+    padding: 0px;
+    color: #FFFFFF;
+    font-size: 2em;
+}
+
+#formStateSelection select {
+}

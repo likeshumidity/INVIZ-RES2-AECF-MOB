@@ -2,7 +2,7 @@ $(document).ready(function() {
   $.get("content/stateList.csv", function(data) {
     var html = '<form role="form">';
     html += '<div class="form-group">';
-    html += '<label for="selectState">Select a state:</label>';
+    html += '<label for="selectState">EXPLORE THE DATA</label>';
     html += '<select id="selectState" class="form-control" onchange="selectionUpdateState();">';
 
     var rows = data.split("\n");
