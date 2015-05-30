@@ -28,7 +28,7 @@
     </div>
     <div class="row">
       <div class="col-sm-3" id="rankingSelector">
-        <img src="images/rankNav.png" width="100%" />
+        <img src="images/rankNav.png" width="100%" id="rankNavImg" />
       </div>
       <div class="col-sm-9">
         <div>
@@ -246,6 +246,15 @@
     <script src="http://d3js.org/d3.v3.min.js"></script>
 
     <script type="text/javascript">
+    <!--
+
+d3.select('#rankNavImg').style('display', 'none');
+
+var svg = d3.select('#rankingSelector').append('svg')
+  .attr('width', '100%')
+  .attr('height', '450')
+  .attr('viewbox', '0 0 290 450');
+
 /*        var selectionUpdateState = function() {
             var selection = document.getElementById('selectState').value;
             
@@ -286,6 +295,7 @@
 //        d3.select('#rankingSelector')
 //          .enter().append('svg')
 //          .style('width: 100%;');
+    -->
     </script>
       
     <script src="js/main.js"></script> 
